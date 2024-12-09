@@ -59,6 +59,7 @@ export default function Navbar() {
         {/* Cart Icon */}
         <AiOutlineShoppingCart className="text-2xl text-black" />
       </div>
-    </header>
+    </header> 
+
   );
 }
