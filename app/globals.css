@@ -1,33 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind CSS imports */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.img-custom {
+  width: 381px;
+  height: 480px;
+  margin-top: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.img-label {
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  color: #333333;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 10px; /* Adjust the margin if needed */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.centered-text {
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #3A3A3A;
+  text-align: center;
+  margin-top: 20px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.our-product-title {
+  width: 269px;
+  height: 48px;
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: #3A3A3A;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.product-box {
+  width: 1236px;
+  height: 1084px;
+  gap: 0;
+  border-top: 1px solid #000; /* Assuming a solid black border for top */
+  opacity: 0;
+  position: relative;
+  top: 1610px;
+  left: 102px;
 }
